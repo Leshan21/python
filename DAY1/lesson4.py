@@ -1,3 +1,3 @@
-s ="what is your name?"
-
-print(len(input(s)))
+name = input("what is your name: ")
+length = len(name)
+print(length)

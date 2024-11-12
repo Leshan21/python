@@ -8,5 +8,5 @@ list_length = len(list)
 
 ran_num = random.randint(0,list_length-1)
 
-print(print(f"{list[ran_num]} is going to buy the meal today!"))
+print(f"{list[ran_num]} is going to buy the meal today!")
      

@@ -1,6 +1,6 @@
 import requests
 import random
-num = random.randint(5,10)
+num = random.randint(3,5)
 
 url = f"https://random-word-api.herokuapp.com/word?length={num}"
 try:

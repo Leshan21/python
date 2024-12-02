@@ -1,9 +1,11 @@
 import requests
-import hangman
+import api
+import json 
 
-word = hangman.winnig_string
+json_word = api.data[0] 
+String_word = str(json_word)
 
-url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{String_word}"
 
 response = requests.get(url)
 
@@ -17,7 +19,7 @@ if response.status_code == 200:
         first_entry = json_data[0]  
         first_meaning = first_entry["meanings"][0]  
         first_definition = first_meaning["definitions"][0]["definition"]  
-
+        
     except (IndexError, KeyError) as e:
         print("Error navigating the JSON structure:", e)
 else:

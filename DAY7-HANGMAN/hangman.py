@@ -67,10 +67,12 @@ HANGMANPICS = ['''
                     ''']
 json_word = api.data 
 String_word = json.dumps(json_word)
+
+
 #print(String_word)
 #print(String_word[api.num+1])
 #print(String_word[2])
-#print(api.num)
+
 
 Dead_number = 0
 string_index = 2
@@ -78,8 +80,10 @@ display_array = ["_"]*(api.num)
 letter_check_index = 2
 winning_number = 0
 winnig_string = " " 
+print(f"Definition: {dicapi.first_definition}")
+print(''.join(display_array))
 while Dead_number != 6:
-    print(f"First Definition: {dicapi.first_definition}")
+    
     letter = input("Enter the Letter: ")[0]
     
     for index in range(2,api.num+2):

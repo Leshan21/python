@@ -1,6 +1,6 @@
 import api
 import json
-
+import dicapi
 print('''
         ██╗░░██╗░█████╗░███╗░░██╗░██████╗░███╗░░░███╗░█████╗░███╗░░██╗
         ██║░░██║██╔══██╗████╗░██║██╔════╝░████╗░████║██╔══██╗████╗░██║
@@ -79,6 +79,7 @@ letter_check_index = 2
 winning_number = 0
 winnig_string = " " 
 while Dead_number != 6:
+    print(f"First Definition: {dicapi.first_definition}")
     letter = input("Enter the Letter: ")[0]
     
     for index in range(2,api.num+2):

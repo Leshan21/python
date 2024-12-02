@@ -3,10 +3,11 @@ import random
 num = random.randint(5,10)
 
 url = f"https://random-word-api.herokuapp.com/word?length={num}"
+try:
+    response = requests.get(url)
 
-response = requests.get(url)
-
-if response.status_code == 200:
+    response.raise_for_status()
     data = response.json()
-else:
-    print(f"Faild to fetch data. Status code: {response.status_code}")    
+except requests.exceptions.HTTPError as errh:
+    print("HTTP Error")
+    print(errh.args[0])

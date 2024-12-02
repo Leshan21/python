@@ -66,7 +66,7 @@ HANGMANPICS = ['''
 =========''']
 json_word = api.data 
 String_word = json.dumps(json_word)
-print(String_word)
+#print(String_word)
 #print(String_word[api.num+1])
 #print(String_word[2])
 #print(api.num)
@@ -105,10 +105,24 @@ while Dead_number != 6:
         print(''.join(display_array))
         letter_check_index = 0    
     if winnig_string == "You win..!":
-        print(winnig_string)
+        print(''' 
+                __     __                    _       
+                \ \   / /                   (_)      
+                 \ \_/ /__  _   _  __      ___ _ __  
+                  \   / _ \| | | | \ \ /\ / / | '_ \ 
+                   | | (_) | |_| |  \ V  V /| | | | |
+                   |_|\___/ \__,_|   \_/\_/ |_|_| |_|
+                                      
+                                      ''')
         break
     elif Dead_number == 6:
-        print("You lost..!")
+        print(''' __     __             _           _   
+                  \ \   / /            | |         | |  
+                   \ \_/ /__  _   _    | | ___  ___| |_ 
+                    \   / _ \| | | |   | |/ _ \/ __| __|
+                     | | (_) | |_| |   | | (_) \__ \ |_ 
+                     |_|\___/ \__,_|   |_|\___/|___/\__|
+                                      ''')
         break
 
         

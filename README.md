@@ -4,8 +4,9 @@
   and how to call that function in the program
 </p>
 the code block for creating functions in Python
+
 ```markdown
-```python
+
 def function_name(parameters):
-    code here
+    code_here
 

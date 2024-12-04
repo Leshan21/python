@@ -6,7 +6,15 @@
 the code block for creating functions in Python
 
 ```markdown
+```python
 
 def function_name(parameters):
     code_here
+```
+the code for how to call a created function in Python
+
+```markdown
+
+function_name(parameters)
+```
 

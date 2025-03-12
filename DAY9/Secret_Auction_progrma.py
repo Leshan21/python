@@ -2,6 +2,7 @@ import sys
 
 agin ="yes"
 dic = {}
+print("Welcome to the secret auction program.")
 
 while agin == "yes":
     print('''
@@ -21,9 +22,10 @@ while agin == "yes":
     ⠀⠀⠀⠀⢠⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠛⠛⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         
+        
     ''')
 
-    print("Welcome to the secret auction program.")
+    
     
     name = input("What is your name? ").lower()
     bid = input("What is your bid? $___ ")

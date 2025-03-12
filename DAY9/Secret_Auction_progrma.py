@@ -25,8 +25,6 @@ while agin == "yes":
         
     ''')
 
-    
-    
     name = input("What is your name? ").lower()
     bid = input("What is your bid? $___ ")
     dic[name] = int(bid[1:])

@@ -33,7 +33,7 @@ while agin == "yes":
         sys.stdout.write("\033[H\033[J")
         sys.stdout.flush()
     elif otherbidders == "no":
-      agin = "no"
+        agin = "no"
 
 max_key = max(dic, key=dic.get)  
 max_value = dic[max_key]
